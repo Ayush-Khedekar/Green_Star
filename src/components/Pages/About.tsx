@@ -30,8 +30,8 @@ const About = () => {
       <div className="w-full  flex flex-col  gap-10">
         <OurMission />
         <div className="flex flex-col gap-4 ">
-          {data.map((item) => (
-            <Icon_Component CardProp={item} />
+          {data.map((item, index) => (
+            <Icon_Component key={index} CardProp={item} />
           ))}
         </div>
       </div>

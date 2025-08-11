@@ -32,8 +32,6 @@ const App = () => {
         <section id="privacy-policy">
           <Privacy_Policy />
         </section>
-        <div className="bg-slate-100 h-4"></div>
-
         <section id="contact">
           <Contact />
         </section>

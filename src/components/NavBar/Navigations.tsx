@@ -17,7 +17,6 @@ const navItems = [
 ];
 
 const Navigations = ({ onLinkClick, activeSection }: Props) => {
-  console.log(activeSection, "cecse");
   return (
     <>
       {navItems.map((item) => (
@@ -37,7 +36,7 @@ const Navigations = ({ onLinkClick, activeSection }: Props) => {
         >
           <a
             href={`#${item.id}`}
-            className={`flex flex-col items-end justify-between mx-2 md:text-[13px] pt-[5px] pb-[3px] text-[20px] xl:text-[18px] lg:text-[16px] 2xl:text-[20px] font-medium hover:text-[#53b850] font-[Poppins] relative
+            className={`flex flex-col items-start justify-between mx-2 md:text-[13px] pt-[5px] pb-[3px] text-[20px] xl:text-[18px] lg:text-[16px] 2xl:text-[20px] font-medium hover:text-[#53b850] font-[Poppins] relative
               ${activeSection === item.id ? "" : "text-[#026300]"}
               `}
           >
@@ -46,7 +45,7 @@ const Navigations = ({ onLinkClick, activeSection }: Props) => {
               className={`h-[2px] w-full bg-[#F9BA14] transform transition-all ease-in-out duration-300${
                 activeSection === item.id
                   ? "opacity-100 translate-x-0 w-full"
-                  : "absolute bottom-0 left-0 -translate-x-5 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 group-hover:w-[50%]"
+                  : "absolute bottom-0 left-0 -translate-x-3 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 group-hover:w-[50%]"
               }`}
             ></span>
           </a>
