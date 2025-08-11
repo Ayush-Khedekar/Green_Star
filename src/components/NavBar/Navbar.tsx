@@ -43,7 +43,11 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-10 bg-white">
       <div className="flex relative justify-between items-center px-6 py-2 bg-white">
-        <img src={Green_Star} alt="Green star" className="lg:w-[15%] w-[55%]" />
+        <img
+          src={Green_Star}
+          alt="Green star"
+          className="lg:w-[20%] sm:w-[33%] w-[35%] md:w-[27%]"
+        />
         <div className="hidden lg:block">
           <ul className="flex items-center justify-end list-none gap-3">
             <Navigations onLinkClick={handleScrollTo} activeSection={active} />
