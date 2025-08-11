@@ -6,7 +6,9 @@ import Privacy_Policy from "./components/Pages/Privacy_Policy";
 import Contact from "./components/Pages/Contact";
 import About from "./components/Pages/About";
 import Services from "./components/Pages/Services";
-import Photo from "./components/Gallery";
+// import Photo from "./components/Gallery";
+// import NewGallery from "./components/NewGallery";
+import Gallery from "./components/Gallery";
 // import InfiniteScrollCards from "./components/Pages/Moving_cards";
 
 const App = () => {
@@ -25,7 +27,7 @@ const App = () => {
           <Services />
         </section>
         <section id="gallery">
-          <Photo />
+          <Gallery />
         </section>
         <Testimonials />
         <div className="bg-slate-100 h-4"></div>
@@ -48,8 +50,7 @@ const App = () => {
 
       {/* aakash */}
 
-      {/*  */}
-      {/* <NewGallery/> */}
+      {/* <Gallery /> */}
     </div>
   );
 };

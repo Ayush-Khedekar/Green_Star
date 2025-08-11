@@ -9,13 +9,13 @@ const About = () => {
           Icons: <FaRegLaugh />,
           Title: "Quality Guaranteed",
           Description:
-            "SoliTeck's in-house technical team ensures non-stop delivery of services. You do not have to worry about it anymore.",
+            "Green Star in-house technical team ensures non-stop delivery of services. You do not have to worry about it anymore.",
         },
         {
           Icons: <FaForward />,
           Title: "Fastest Servers",
           Description:
-            "Backend of SoliTeck is completely based on cloud technology installed on fastest servers in the world.",
+            "Backend of Green Star is completely based on cloud technology installed on fastest servers in the world.",
         },
         {
           Icons: <BiMoney />,
