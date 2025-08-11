@@ -4,7 +4,6 @@ import imagTech1 from "./gallery/ImgTech1.jpg";
 import imagTech2 from "./gallery/ImgTech2.jpg";
 import imagTech3 from "./gallery/ImgTech3.jpeg";
 import imagTech4 from "./gallery/ImgTech4.jpg";
-// import imagTech5 from "./gallery/ImgTech5.png";
 import imagTech6 from "./gallery/ImgTech6.jpeg";
 import photo1 from  "./gallery/photo1.jpg"
 import photo2 from "./gallery/photo2.jpg"
@@ -23,7 +22,7 @@ const images = {
   imagTech2,
   imagTech3,
   imagTech4,
-  // imagTech5,
+  
   imagTech6,
   photo1,
   photo2,
