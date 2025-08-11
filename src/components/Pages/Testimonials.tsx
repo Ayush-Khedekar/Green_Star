@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { motion } from "motion/react";
 import frame from "../Images/GREEN STAR LOGO.svg";
+import { FaCircleUser } from "react-icons/fa6";
+import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
 type dataProps = {
   name: string;
   store: string;
@@ -42,7 +44,7 @@ const Testimonials = () => {
   const [mouseOver, setIsMouseOver] = useState(false);
 
   return (
-    <div className="overflow-hidden w-full p-10 bg-slate-200">
+    <div className="overflow-hidden w-full p-10 bg-white">
       <div
         style={{ animationPlayState: mouseOver ? "paused" : "running" }}
         className={`flex animate-marquee w-max`}
@@ -52,29 +54,44 @@ const Testimonials = () => {
             onMouseEnter={() => setIsMouseOver(true)}
             onMouseLeave={() => setIsMouseOver(false)}
             key={`item-${index}`}
-            className="w-[100vw] justify-between sm:w-[50vw] md:w-[33.3333vw] flex-shrink-0 flex flex-col p-3 rounded-[20px] shadow-2xl items-center text-center font-medium mx-2 gap-3 bg-white"
+            className="w-[24.375rem] lg:w-[30rem] flex-shrink-0 flex flex-col justify-between font-medium mx-2 p-6 bg-white rounded-2xl shadow-xl border border-gray-200 gap-4"
           >
-            <img src={frame} alt="logo_Green_Star" className="w-[20%]" />
-            <p className="text-[1rem]">{item.description}</p>
-            <motion.div className="border-t-2 w-[80%] flex flex-col pt-3">
-              <motion.h2
-                whileInView={{ opacity: 1, y: 0 }}
-                initial={{ opacity: 0, y: -20 }}
-                transition={{ duration: 1.5 }}
-                viewport={{ once: true }}
-                className="text-green-600 text-[1.5rem]"
-              >
-                {item.name}
-              </motion.h2>
-              <motion.p
-                whileInView={{ opacity: 1, y: 0 }}
-                initial={{ opacity: 0, y: -20 }}
-                transition={{ duration: 1.5 }}
-                viewport={{ once: true }}
-                className="text-[1.1rem] text-yellow-600"
-              >
-                {item.store}
-              </motion.p>
+            <div className="flex justify-center">
+              <img src={frame} alt="logo_Green_Star" className="w-[28%]" />
+            </div>
+            <p className="relative text-gray-800 text-lg md:text-xl leading-relaxed px-4">
+              <span className="text-3xl text-blue-600 absolute -top-2 -left-4">
+                <RiDoubleQuotesL />
+              </span>
+              {item.description}
+              <span className="text-3xl text-blue-600 absolute -bottom-0 -right-2">
+                <RiDoubleQuotesR />
+              </span>
+            </p>
+            <motion.div className="w-[80%] flex px-3 gap-4">
+              <div className="">
+                <FaCircleUser size={50} color="#026300" />
+              </div>
+              <div className="flex flex-col">
+                <motion.h2
+                  whileInView={{ opacity: 1, y: 0 }}
+                  initial={{ opacity: 0, y: -20 }}
+                  transition={{ duration: 1.5 }}
+                  viewport={{ once: true }}
+                  className="text-green-600 text-[1.3rem]"
+                >
+                  {item.name}
+                </motion.h2>
+                <motion.p
+                  whileInView={{ opacity: 1, y: 0 }}
+                  initial={{ opacity: 0, y: -20 }}
+                  transition={{ duration: 1.5 }}
+                  viewport={{ once: true }}
+                  className="text-[0.9rem] text-yellow-600"
+                >
+                  {item.store}
+                </motion.p>
+              </div>
             </motion.div>
           </div>
         ))}

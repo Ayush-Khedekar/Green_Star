@@ -34,7 +34,7 @@ const Home = () => {
             <div className="text-center sm:text-lg text-[1.3rem] mt-6">
               <a
                 href="#about"
-                className="py-3 px-9 rounded-4xl shadow-md bg-blue-500 hover:bg-blue-600"
+                className="py-3 px-9 rounded-4xl shadow-md bg-yellow-400 hover:bg-yellow-300 font-medium text-slate-800"
               >
                 Get Started
               </a>

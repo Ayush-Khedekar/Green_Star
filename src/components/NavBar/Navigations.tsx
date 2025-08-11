@@ -45,7 +45,7 @@ const Navigations = ({ onLinkClick, activeSection }: Props) => {
               className={`h-[2px] w-full bg-[#F9BA14] transform transition-all ease-in-out duration-300${
                 activeSection === item.id
                   ? "opacity-100 translate-x-0 w-full"
-                  : "absolute bottom-0 left-0 -translate-x-3 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 group-hover:w-[70%]"
+                  : "absolute bottom-0 left-0 -translate-x-3 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 group-hover:w-[50%]"
               }`}
             ></span>
           </a>
