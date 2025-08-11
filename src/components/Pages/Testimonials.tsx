@@ -52,7 +52,7 @@ const Testimonials = () => {
             onMouseEnter={() => setIsMouseOver(true)}
             onMouseLeave={() => setIsMouseOver(false)}
             key={`item-${index}`}
-            className="w-[100vw] sm:w-[50vw] md:w-[33.3333vw] flex-shrink-0 flex flex-col p-3 rounded-[20px] shadow-2xl items-center text-center font-medium mx-2 gap-3 bg-white"
+            className="w-[100vw] justify-between sm:w-[50vw] md:w-[33.3333vw] flex-shrink-0 flex flex-col p-3 rounded-[20px] shadow-2xl items-center text-center font-medium mx-2 gap-3 bg-white"
           >
             <img src={frame} alt="logo_Green_Star" className="w-[20%]" />
             <p className="text-[1rem]">{item.description}</p>
