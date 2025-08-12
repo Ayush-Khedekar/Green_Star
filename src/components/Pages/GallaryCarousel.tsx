@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 export interface SliderCarouselProps {
   images: string[];
 }
@@ -15,12 +15,12 @@ const SliderCarousel = ({ images }: SliderCarouselProps) => {
   }, [active]);
   return (
     <>
-      <div className="w-full h-[70%] flex gap-2  justify-center items-stretch">
+      <div className="w-full sm:h-[70%] h-[60%] flex gap-2  justify-center items-stretch">
         {images?.map((eachImage, ind) => (
           <div
             key={ind}
             className={`rounded-md cursor-pointer  h-full left-0 origin-left z-[5] ${
-              ind == active ? " w-[250px]" : "w-[50px] "
+              ind == active ? " w-[500px] sm:w-[250px]" : "w-[50px] "
             } opacity-100 object-cover overflow-hidden duration-300 transition-all ease-in-out `}
           >
             <img
