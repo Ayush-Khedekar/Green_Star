@@ -21,7 +21,7 @@ const Gallery = () => {
           GALLERY
         </p>
         <div className="w-full h-full flex justify-center items-center">
-          <div className="w-[150%] h-[450px] flex justify-center items-center flex-wrap">
+          <div className="w-[200%] h-[450px] flex justify-center items-center flex-wrap overflow-y-auto">
             <SliderCarousel images={imgSources} />
           </div>
         </div>
