@@ -1,4 +1,4 @@
-import { motion } from "framer-motion"; // Ensure 'framer-motion' installed
+import { motion } from "framer-motion";
 
 type Props = {
   onLinkClick: (id: string) => void;

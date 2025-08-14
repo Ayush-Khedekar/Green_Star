@@ -15,7 +15,7 @@ const SliderControles = ({
     <div className={className || "flex gap-1 items-center justify-center"}>
       {Array(size)
         .fill(1)
-        .map((button, ind) => (
+        .map((_button, ind) => (
           <div
             onClick={() => {
               onChange(ind);

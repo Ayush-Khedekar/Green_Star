@@ -14,11 +14,16 @@ const Navbar = () => {
   }
 
   const handleScrollTo = (id: string) => {
-    const offset = 80; // header height
+    const offset = 80; // navbar height
     const el = document.getElementById(id);
     if (el) {
-      const top = el.offsetTop - offset;
-      window.scrollTo({ top, behavior: "smooth" });
+      const elementPosition = el.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
     }
     setShowDropDown(false);
   };

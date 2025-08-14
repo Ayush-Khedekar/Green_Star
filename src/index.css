@@ -26,3 +26,10 @@
   animation: marquee 20s linear infinite;
 }
 
+section {
+  scroll-margin-top: 80px;
+}
+
+#about {
+  scroll-margin-top: 80px; /* height of navbar */
+}
